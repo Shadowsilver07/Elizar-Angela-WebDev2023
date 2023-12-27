@@ -1,0 +1,57 @@
+
+/* My Solution 
+html {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.Kid {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+img {
+    border: 5px solid white;
+    width: 100%;
+    height: 55%;
+}
+
+*/
+
+/* Revision */
+
+body {
+    background-color: black;
+}    
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.Kid {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    color: white;  
+    font-family: "Libre Baskerville", serif;
+    text-align: center
+    
+}
+
+.Kid-Image {
+    border: 5px solid white;
+    width: 100%;
+}
+
