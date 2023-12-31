@@ -12,6 +12,6 @@
  - Boss Challenge 1: Boss Dice Game
    
 
-## Old Videos Source
-- [Source](https://appbrewery.com/courses/legacy-complete-web-development-course/lectures/46570329)
+## Old Videos
+[Source](https://appbrewery.com/courses/legacy-complete-web-development-course/lectures/46570329)
 - MongoDB
