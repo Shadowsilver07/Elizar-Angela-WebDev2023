@@ -10,7 +10,8 @@
  - Web Design School Create a Website that People Love
  - Capstone 2:
  - Boss Challenge 1: Boss Dice Game
-   
+
+ ## Contents   
 - Section 1: Front-End Web Development
 - Section 2: Introduction to HTML 
 - Section 3: Intermediate HTML
