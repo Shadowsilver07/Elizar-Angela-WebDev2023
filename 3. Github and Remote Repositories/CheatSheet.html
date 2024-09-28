@@ -1,0 +1,42 @@
+<!-- Github and Remote Repositories -->
+
+# Git Repository is the Local Respository
+# Git repository refers to the local instance on your machine, while a remote repository is hosted externally (e.g., on GitHub, GitLab) for sharing and collaboration.
+# .git file(folder) is our local repo and the remote repo is Github that host our code and all the changes made in between different commits
+
+        |Working Directory| > git add > |Staging Area| > git commit > |Git Repository or Local Repo| > git remote add origin <remote name> |Github or Remote Repo|
+
+
+# Main branch is your commit and it is sequential  
+# Your main progress or commited  
+
+        Main branch
+        |1.| - |2.| - |3.| - |4.|
+
+
+
+# Create and name the remote repo
+# # origin is the <name> of the remote repo - you can change it but by convention you can keep simply use origin and this is mostly being used by developers as naming convention
+git remote add origin <remote name>
+git remote add origin https://github.com/Shadowsilver07/Github-Test2.git
+
+
+# To remove or delete the remote repo
+git remote remove origin
+
+# To rename the remote repo
+git remote rename origin <new name>
+
+
+
+# This push the Local repo to the remote repo, using the -u flag/option which link up your local and remote repo
+# Push it towards the remote called origin to the branch called main
+git push -u <remote name> <branch name>
+git push -u origin main
+
+    # This command will push the local branch to the remote repository and set the upstream tracking information. 
+    # The -u option is used to set the upstream tracking information. 
+    # This means that the local branch will be set as the tracking branch for the remote branch. 
+    # This is useful when you want to push and pull changes from the remote repository.
+    # Sample: git push -u origin master
+    
