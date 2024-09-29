@@ -11,3 +11,31 @@ git clone https://github.com/Shadowsilver07/Github-Training-3.git
 # Improve your own version from v1.0 to v2.0
 # Read other people's code
 # mailchip - host your own email servers
+
+Steps Local to Remote Repo to Github
+git add .
+git commit -m "Initial commit"
+git push -u origin main # Issue! > See picture Push
+# Troubleshooting
+    1. git push -u origin main --force
+
+
+
+# Changes from Remote applied to local 
+
+The error message indicates that your local main branch is behind the remote main branch. To resolve this, you'll need to pull the latest changes from the remote repository before pushing your local changes. Here’s how to do it:
+
+1. Pull the latest changes: Run the following command to fetch and merge the remote changes:
+git pull origin main
+
+If there are merge conflicts, you'll need to resolve them before proceeding.
+
+2. Push your changes: After successfully pulling the changes and resolving any conflicts, you can push your local changes:
+git push -u origin main
+
+# Alternative: 
+# (Force Push)
+If you're sure that you want to overwrite the remote branch with your local changes (which can lead to losing remote changes), you can force push using:
+git push -u origin main --force
+
+Use this option with caution as it will discard any changes on the remote branch.
