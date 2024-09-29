@@ -24,3 +24,21 @@ git branch
 5. Makes some changes in chapter1.txt and chapter2.txt > save
 6. git add .
 7. git commit -m "Changes in chapter1.txt and chapter2.txt"
+
+git log # To see the changes - can be skipped as sometimes it hangs
+
+8. Go back to main branch
+git branch # to see the branch where you at
+git checkout main
+
+9. Create new file named chapter4.txt and add changes
+touch chapter4.txt
+
+10. Go back to the branch alient-plot
+git checkout alien-plot
+
+11. To merge the changes from alien-plot branch to main branch
+git checkout main
+git merge alien-plot
+
+
