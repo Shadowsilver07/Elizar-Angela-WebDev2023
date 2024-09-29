@@ -1,0 +1,48 @@
+# Practice
+
+
+1. created Sample folder
+mkdir Sample
+
+2. Created files
+touch file1.txt
+touch file2.txt
+touch file3.txt secrets.txt
+ls
+
+3. Created .gitignore file
+
+4. Created Working Directory
+git init
+
+5. Push to the Staging Area
+git add .
+git status # see status
+
+6. This removes all the added file to the staging area
+git rm --cached -r .
+
+# Explanation on the above code
+git: This is a tool for tracking changes in code.
+
+rm: This stands for "remove." It’s a command used to delete something.
+
+--cached: This option means you're removing files from the staging area (the area where files are prepared to be committed) but not deleting them from your actual hard drive.
+
+-r: This stands for "recursive." It means you want to apply the command to all files and folders inside the current directory.
+
+.: This represents the current directory. So, you’re telling Git to look at everything in the current folder and its subfolders.
+
+Putting it all together, git rm --cached -r . removes all files from the staging area without deleting them from your computer. It’s useful if you want to stop tracking files in Git but keep them in your project.
+
+
+7. Open the .gitignore file to a new tab then type the file name you want to be ignored
+# Ignored and not be added to Staging Area
+
+secrets.txt
+
+8. Add to the Staging
+git add .
+
+9. Push or commit to the Git / Local Repo
+git commit -m "Initial commit" # commit with a message
