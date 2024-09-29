@@ -19,3 +19,68 @@ git merge <name-of-branch>
     Main: 1 > 2 > 3 > 4 > 5 # Where Feature 4 is merged to Main 4
     Feature: 3 > 4
 
+
+# git push origin main -u
+    The command git push origin main -u is used to push your local changes to a remote repository on GitHub (or another Git server). Here's a breakdown of each part:
+
+    - git push: This is the command to upload your local commits to a remote repository.
+    
+    - origin: This is the default name for your remote repository. When you clone a repository, Git automatically names it "origin". You can think of it as a shorthand reference to the remote repository URL.
+    
+    - main: This specifies the branch you want to push. In this case, it's the main branch.
+    
+    -u or --set-upstream: This option sets the upstream tracking reference for the branch. This means that after you run this command, your local main branch will be linked to the remote main branch. This allows you to use git push or git pull in the future without needing to specify the remote and branch names again.
+    
+    In Summary
+    So, running git push origin main -u will:
+    
+    Push your local main branch to the origin remote repository.
+    Set the local main branch to track the origin/main branch, simplifying future pushes and pulls.
+
+
+# The difference between the git push -u origin main
+The difference between git push origin main and git push -u origin main lies in the tracking behavior:
+
+    1. git push origin main: This command pushes your local main branch to the origin remote repository. However, it does not set any tracking relationship. If you run this command, you’ll need to specify the remote and branch again for future pushes.
+
+    2. git push -u origin main: This command does the same as the first, but it also sets the local main branch to track the origin/main branch. After using this command, you can simply use git push or git pull in the future without specifying the remote and branch, as it remembers the relationship.
+
+    In Summary
+    Use -u to simplify future pushes/pulls by establishing a tracking relationship.
+    Without -u, you have to specify the remote and branch each time.
+
+
+
+# To create a new branch under main using Git Bash in VSCode, you can follow these steps:
+
+    Step 1: Open Git Bash
+    Make sure you have your terminal open in the project directory.
+    
+    Step 2: Fetch Latest Changes (Optional)
+    If you want to ensure you're up to date with the remote main, you can run:
+    git checkout main
+    git pull origin main
+
+    Step 3: Create a New Branch
+    To create a new branch from main, use the following command:
+    git checkout -b your-new-branch-name
+    Replace your-new-branch-name with the name you want to give your new branch.
+
+    Step 4: Push the New Branch to Remote
+    After creating your new branch, you can push it to the remote repository:
+    git push -u origin <your-new-branch-name>
+
+This command not only pushes the new branch to the remote but also sets up the tracking relationship so you can use git push and git pull without specifying the branch name later.
+
+    In Summary:
+    
+    1. Check out the main branch and pull the latest changes (optional):
+    git checkout main
+    git pull origin main
+
+    2. Create and switch to a new branch:
+    git checkout -b your-new-branch-name
+
+    3. Push the new branch to the remote:
+    git push -u origin <your-new-branch-name>
+
