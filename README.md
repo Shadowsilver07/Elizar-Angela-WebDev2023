@@ -1,2 +1,5 @@
-# awesome-for-beginners
-  https://github.com/MunGell/awesome-for-beginners
+# Beginner Friendly Repos
+    https://github.com/MunGell/awesome-for-beginners
+
+# word-mastermind
+    https://github.com/clupasq/word-mastermind

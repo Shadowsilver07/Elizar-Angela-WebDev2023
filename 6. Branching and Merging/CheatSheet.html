@@ -1,0 +1,21 @@
+<!-- Branching and Merging -->
+
+Feature development with branches
+Main: 1 > 2 > 3
+
+# Instead of continuing to Main we create a side branch for Feature
+# From 2 to side 3
+Feature: 3 > 4
+git branch <name-of-branch>
+
+
+# We can still continue with the changes from the Main branch and parallel to the Feature branch
+# We can develop both simultaneously
+
+# When we decide to merge the feature branch to the main branch 
+# This can be done by placing a merge request
+git merge <name-of-branch>
+
+    Main: 1 > 2 > 3 > 4 > 5 # Where Feature 4 is merged to Main 4
+    Feature: 3 > 4
+
