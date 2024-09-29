@@ -1,0 +1,36 @@
+# Clone Word Mastermind from Github to local repo
+
+
+1. Go to Github and search for Quakejs
+2. Go to Git Bash / Terminal and Type the below
+git clone https://github.com/clupasq/word-mastermind.git
+
+
+3. cd word-mastermind/
+
+4. npm start # Issue! > See picture error 1
+# Troubleshooting
+    1. npm install
+    2. npm install @fastify/static
+
+    Next:
+    node src/server.js # issue 
+    3. searched src/server.js 
+        - open the file and looked for > const fastifyStatic = require("fastify-static") > made it a comment
+        - replaced / added const fastifyStatic = require("@fastify/static") > saved
+
+    4. update the fastify-static import to @fastify/static since it's deprecated. 
+    Lastly the error that indicates that you're still passing the port incorrectly in the listen call. 
+    It should be an object with both port and host properties. Update your listen line to this:
+        - on the same filesrc/server.js
+        - searched and look for await fastify.listen > this is to modify it - I just made it a comment again 
+        - replaced it with > await fastify.listen({ port: port, host: address || '0.0.0.0' });  > saved the files
+
+    5. npm start
+
+5. Open the browser and run it http://127.0.0.1:3333/ > Working!!
+
+
+    
+
+

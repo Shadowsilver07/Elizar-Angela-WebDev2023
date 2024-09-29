@@ -1,0 +1,38 @@
+# Clone Quakejs from Github to local repo
+
+1. Go to Github and search for Quakejs
+2. Go to Git Bash / Terminal and Type the below
+git clone https://github.com/inolen/quakejs.git
+
+
+3. cd quakejs
+
+# Follow the Running locally from the docu of Quakejs
+
+# Install the required node.js modules:
+5. npm install # Issue! > See picture error 1
+# Troubleshooting
+The error indicates that npm can't find a package.json file in your project directory. Here are a few steps to resolve it:
+
+    1. Check Location: Ensure you're in the correct directory where your project is supposed to be.
+
+    2. Create package.json: If it doesn't exist, you can create one by running npm init and following the prompts.
+
+    3. Restore from Version Control: If the file was accidentally deleted, check your Git repository to restore it.
+
+    4. Correct Path: Make sure the path specified is accurate. If you have multiple projects, verify you're in the right folder.
+
+    5. Once the package.json is in place, try running npm install again.
+
+# Solution - 2. Create package.json Typed npm init > npm install
+
+# Set content.quakejs.com as the content server:
+6. echo '{ "content": "content.quakejs.com" }' > bin/web.json # Issue! > See picture error2
+
+# Run the server:
+7. node bin/web.js --config ./web.json # Issue! > See picture error3
+# Troubleshooting
+    1. This needs Stackoverflow assistance > To be continue. > receives cors error after trying to run F12 > Console and Network > used chatgpt and it mentions the CORS Error
+
+
+
