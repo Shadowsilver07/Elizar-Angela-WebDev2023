@@ -109,3 +109,27 @@ git remote -v (to check remote configuration)
 git remote add origin https://github.com/username/repo.git (if origin is missing)
 git remote set-url origin https://github.com/username/repo.git (if origin is incorrect)
 git push -u origin feature (to push your changes)
+
+2. Local-No Branch name to Main Branch(Github)
+a. I have a repository called new and I want to push it to myGithub repo to its main branch -- i am using vscode with gitbash 
+
+To push your local repository called new to your GitHub repository's main branch, follow these steps in VSCode using Git Bash:
+Push Your Local Repository to GitHub > See picture: Local-No Branch name to Main Branch(Github)
+
+git init (if needed)
+git remote -v (to check remote)
+git remote add origin https://github.com/username/new.git (to add remote)
+git add . (to stage changes)
+git commit -m "Initial commit" (to commit changes)
+git push -u origin main (to push to main branch)
+
+
+
+b. If there is a difference between the local and remote:
+If you confirm that you can apply the changes from Github to local repo > See picture: 1. Diff between local and remote repo
+
+git pull origin main --rebase
+(Resolve conflicts if needed)
+git add <file1> <file2> (if there were conflicts)
+git rebase --continue (if you had conflicts)
+git push -u origin main
