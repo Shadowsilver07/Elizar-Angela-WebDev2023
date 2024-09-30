@@ -95,5 +95,17 @@ a. I am currently working on a project that is named feature as a branch and it 
 To push your feature(new) branch to another project in GitHub as a new branch under its main branch, you can follow these steps using Git Bash in VSCode:
 Steps to Push Your Feature Branch to Another Repository > See picture: New Branch to another Branch in Github
 
+Name of New branch is Feature:
+git remote add other-repo https://github.com/username/other-repo.git
+git branch (to check your current branch)
+git push other-repo feature:Feature
+
+
 
 b. To make changes to your feature(new) branch and push those changes to the same branch, follow these steps in Git Bash within VSCode: > See picture: New Branch Add and Push to Main
+
+
+git remote -v (to check remote configuration)
+git remote add origin https://github.com/username/repo.git (if origin is missing)
+git remote set-url origin https://github.com/username/repo.git (if origin is incorrect)
+git push -u origin feature (to push your changes)
