@@ -22,3 +22,15 @@ git branch [To check the branch]
 10. git commit -m "API branch created"
 11. git push -u origin API
 - this pushes the API branch to the remote repository
+
+
+Additional:
+1. To change remote repo
+git remote set-url origin https://github.com/username/new-repo.git
+git remote -v
+
+2. rename the remote instead of changing its URL,
+git remote rename old-name new-name
+
+3. add a new remote instead of changing an existing one
+git remote add new-name <new-repo-url>
