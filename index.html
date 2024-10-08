@@ -20,7 +20,7 @@ git branch [To check the branch]
 
 9. git add . 
 10. git commit -m "API branch created"
-11. git push -u origin API
+11. git push -u origin 28.API
 - this pushes the API branch to the remote repository
 
 
@@ -41,3 +41,9 @@ git branch -m new-branch-name
 
 or to name it with special character like with spaces use
 git branch -m "28. API"
+
+5. If you made changes on the remote and receive a conflict 
+a. git pull origin 28.API > new vscode will open asking to add comment, just add another liner #add commit
+b. git add . 
+c. git commit -m "resolved conflict"
+d. git push -u origin 28.API 
