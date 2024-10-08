@@ -1,7 +1,11 @@
 Link: https://shadowsilver07.github.io/Elizar-Angela-WebDev2023/
 # Next: 
+    - 21. Unix Command Line
     - Review Flex
     - Advance: Javascript
+
+# To Do:
+    1. Need to import the rest of the parts as another branch
 
 # Angela-WebDev2023
 
