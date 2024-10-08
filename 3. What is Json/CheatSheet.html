@@ -1,0 +1,72 @@
+<!-- Json -->
+Requirements: 
+- Need Nodejs and Backend to complete Task 1
+
+Next: 12:06 
+
+Tools:
+1. Main Site: https://www.json.org/json-en.html
+2. Json viewer: jsonviewer.stack.hu 
+
+
+1. What is Javascript Object Notation[Json]?
+
+- It's a way to format data that can be sent over the internet in a readable but also efficient way
+- And as the name suggests, it's structured after a JavaScript Object.
+- KEY[String] : VALUE pairs[String, Numbers, Arrays..etc.]
+
+- you can have multiple properties in each object simply by adding a comma after each line.
+- You can also have arrays inside your object and you can nest an object inside another object.
+
+
+2. Difference between Json and Javascript?
+- So the key difference is that a JSON is serialized into a string,
+- as for most of the cases, when you're encountering JSON's it's because some piece of data is being
+- transferred across the Internet, whereas a JavaScript object has a much more relaxed kind of notation
+- because it can be interpreted by the editor or by the code interpreter.
+
+
+
+- It is a string from the beginning to the end, and every single aspect of that notation is serialized
+- so that it can be its minimal size when transferred across the internet.
+- The syntax keeps all of the meaning and then when it gets transferred to the other side and when it
+- needs to be used, it can then be re-expanded into a usable format such as a JavaScript object.
+
+
+JSON (JavaScript Object Notation) and JavaScript are related but serve different purposes:
+
+1. Format vs. Language:
+JSON: A lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. It represents data as key-value pairs.
+JavaScript: A programming language used primarily for creating dynamic content on websites. It allows for the execution of scripts in the browser.
+
+2. Usage:
+
+JSON: Used primarily for data exchange between a server and a client, often in web applications.
+JavaScript: Used to create interactive effects, manipulate the DOM, and handle events on web pages.
+
+3. Syntax:
+JSON: Strict syntax rules (e.g., double quotes for keys and string values, no comments).
+JavaScript: More flexible syntax (e.g., single or double quotes, allows comments).
+
+In summary, JSON is a data format, while JavaScript is a programming language.
+
+
+# Serializaion - Json to JS Object, packing 
+- JS Obect to Json cabinet turns into flat 
+- When you're writing code and you want to send a JSON across the internet, for some reason you will
+- need to perform what's called serialization,
+
+Syntax:
+const jsonData = JSON.stringify(data);
+
+
+
+
+# Parse - Json to JS Object, unpacking
+- turns back cabinet from flat to original size
+- Once you run the parse method, it turns this JSON back into a JavaScript object.
+- Now the opposite direction when you want to unpack a JSON, when you are back home and you've got your
+- flat pack and you're ready to assemble your wardrobe, this process is done using another JSON method,
+
+Syntax:
+const data = JSON.parse(jsonData);
