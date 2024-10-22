@@ -1,0 +1,33 @@
+# Git and Github
+
+Steps:
+1. git init
+2. git add .
+3. git commit -m "first commit"
+
+# Can disregard this is only for creation of remote repository 
+4. git remote add origin https://github.com/Shadowsilver07/Elizar-Angela-WebDev2023.git
+5. git push -u origin main
+
+
+# Create a new branch under Main
+
+1. git init (if needed)
+2. Git branch(To check the branch)
+3. Git checkout -b your-new-branch-name (Replace your-new-branch-name with the name you want to give your new branch.)
+4. Git remote -v (to check remote)
+5. Git remote add origin [Github repo url] (to add remote)
+Note:
+- if there is already an existing remote or receive this error: remote origin already exists.
+2 Option - remove or update
+a. Remove
+git remote remove origin
+git remote add origin https://github.com/Shadowsilver07/Elizar-Angela-WebDev2023.git
+
+b. Update
+git remote set-url origin https://github.com/Shadowsilver07/Elizar-Angela-WebDev2023.git
+
+
+6. Git add . (to stage changes)
+7. Git commit -m "Initial commit" (to commit changes)
+8. Git push -u origin <your-new-branch-name>
